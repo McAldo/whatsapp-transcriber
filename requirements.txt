@@ -1,0 +1,41 @@
+# Core dependencies
+streamlit>=1.28.0
+faster-whisper>=0.10.0
+anthropic>=0.7.0
+openai>=1.3.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+pandas>=2.0.0
+mistralai>=1.0.0
+tiktoken>=0.5.0
+soundfile>=0.12.0
+
+# GPU Support (OPTIONAL but RECOMMENDED for faster transcription)
+# -----------------------------------------------------------------
+# By default, faster-whisper installs CPU-only version of ctranslate2.
+# For GPU acceleration (NVIDIA GPUs with CUDA):
+#
+# 1. Verify CUDA is installed:
+#    nvidia-smi
+#    (Should show CUDA version 11.x or 12.x)
+#
+# 2. Install cuDNN (REQUIRED for GPU to work):
+#    # For CUDA 12.x (most common):
+#    pip install nvidia-cudnn-cu12
+#
+#    # For CUDA 11.x:
+#    pip install nvidia-cudnn-cu11
+#
+# 3. Add cuDNN to PATH (Windows):
+#    Run: python -c "import nvidia.cudnn; import os; print(os.path.dirname(nvidia.cudnn.__file__))"
+#    Add the shown path + "\bin" to your System PATH environment variable
+#    See README.md for detailed instructions
+#
+# 4. Install GPU-enabled ctranslate2:
+#    pip install ctranslate2 --force-reinstall --extra-index-url https://pypi.nvidia.com
+#
+# 5. Verify GPU is detected by running the app - it will show GPU status
+#
+# IMPORTANT: Missing cuDNN is the #1 reason GPU fails!
+# Note: GPU acceleration provides 5-10x faster transcription!
+# If GPU setup fails, the app automatically falls back to CPU (slower but works).
