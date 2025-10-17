@@ -29,7 +29,7 @@ A powerful Python Streamlit application that processes WhatsApp chat exports and
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/whatsapp-transcriber.git
+   git clone https://github.com/McAldo/whatsapp-transcriber.git
    cd whatsapp-transcriber
    ```
 
