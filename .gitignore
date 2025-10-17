@@ -75,3 +75,6 @@ htmlcov/
 
 # Accidentally created files
 nul
+
+# Internal development documentation
+Prompts/
